@@ -7,19 +7,6 @@
 <body>
 
 
-<p data-bind="text: SSID"></p>
-
-<script>
-
-function AppViewModel() {
-	self = this;
-	this.SSID = ko.observable("N/A");
-
-	$.get("SSID", function(data){
-		self.SSID(data.toUpperCase());
-	});
-}
-ko.applyBindings(new AppViewModel());
 </script>
 </body>
 </html>
