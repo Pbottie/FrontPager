@@ -12,7 +12,7 @@
 <script>
 
 function AppViewModel() {
-	this.SSID
+	this.SSID("What");
 	$.get("SSID", function(data){
 		this.SSID(data.toUpperCase());
 	});
