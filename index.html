@@ -14,7 +14,7 @@
 function AppViewModel() {
 	this.SSID("What");
 	$.get("SSID", function(data){
-		this.SSID(data.toUpperCase());
+		this.SSID(data());
 	});
 }
 ko.applyBindings(new AppViewModel());
