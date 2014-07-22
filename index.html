@@ -12,9 +12,10 @@
 <script>
 
 function AppViewModel() {
-	
+	this.SSID = ko.observable("N/A");
+
 	$.get("SSID", function(data){
-		this.SSID = ko.observable(data.toUpperCase());
+	
 	});
 }
 ko.applyBindings(new AppViewModel());
