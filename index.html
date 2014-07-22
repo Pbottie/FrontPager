@@ -6,9 +6,17 @@
 <body>
 
 
-Test
+<p data-bind="text: SSID"></p>
 
+<script>
 
+function AppViewModel() {
+	jQuery.get('/SSID', function(data){
+		console.log(data)
+	});
+}
+ko.applyBindings(new AppViewModel());
+</script>
 </body>
 </html>
 
