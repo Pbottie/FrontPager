@@ -12,7 +12,7 @@
 <script>
 
 function AppViewModel() {
-	this.SSID("What");
+	this.SSID = ko.observable();
 	$.get("SSID", function(data){
 		this.SSID(data());
 	});
