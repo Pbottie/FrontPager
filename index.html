@@ -11,8 +11,8 @@
 <script>
 
 function AppViewModel() {
-	$.get('/SSID', function(data){
-		console.log(data)
+	$.get("SSID", function(data){
+		console.log(data);
 	});
 }
 ko.applyBindings(new AppViewModel());
